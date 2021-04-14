@@ -14,3 +14,7 @@ steps:
     arguments: '--configuration Release --no-build --no-restore'
     testRunTitle: 'azure-pipelines'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
