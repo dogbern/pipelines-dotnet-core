@@ -7,10 +7,10 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/*.sln'
     arguments: '--configuration Release'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
     arguments: '--configuration Release --no-build --no-restore'
     testRunTitle: 'azure-pipelines'
+
